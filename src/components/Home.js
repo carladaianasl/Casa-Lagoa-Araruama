@@ -31,8 +31,46 @@ class Home extends Component {
 	            <h1> Venha curtir momentos únicos e inesquecíveis com sua família e amigos!</h1>
 	            <h2>Saiba mais sobre o espaço!</h2>
 	            </StyleRoot>
-
 	        </div>
+
+	        <div className="boxes">
+                <img src="img/dog.gif" width="100px"/>
+                <h4 className="boxesTitulo">SOMOS PET FRIENDLY</h4>
+                <h5 className="boxesTexto">Seus animais são muito bem vindos em sua estadia. Sabemos o quanto é difícil ficar sem a companhia deles, pois eles são parte da família e merecem total carinho e atenção.
+                <p><span>Não cobramos taxa Pets</span></p></h5>
+            </div>
+                
+                <div className="line"></div>
+
+
+            <div className="boxes">
+                <img src="img/gps.gif" width="100px"/>
+                <h4 className="boxesTitulo">LOCALIZAÇÃO</h4>
+                <h5 className="boxesTexto">Casa em ótima localização - em condomínio fechado - a 5 minutos do centro da cidade de carro. Bairro tranquilo com ruas asfaltadas. Além disso, é excelente para a prática de esportes ao ar livre.</h5>
+            </div>
+
+                <div className="line"></div>
+            
+            <div className="boxes">
+                <img src="img/pool.gif" width="100px"/>
+                <h4 className="boxesTitulo">PISCINA E CHURRASCO</h4>
+                <h5 className="boxesTexto">A piscina e a churrasqueira são para uso exclusivo de nossos hóspedes. Mantemos a piscina limpa com a colocação periódica de produtos. Ainda curtindo com a família e amigos um lindo pôr do sol.</h5>
+            </div>
+
+                <div className="line"></div>
+            
+            <div className="boxes">
+                <img src="img/kitchen.gif" width="100px"/>
+                <h4 className="boxesTitulo">CASA COMPLETA</h4>
+                <h5 className="boxesTexto">Casa mobiliada entregue com limpeza e higienização em todos os ambientes. Disponibilizamos roupas de cama e banho para os hóspedes. Cozinha ja equipada com utensílios e eletrodomésticos.</h5>
+            </div>
+            
+
+            <div className="coments">
+	            <span> Venha curtir momentos únicos e inesquecíveis com sua família e amigos!</span>
+	       	</div>
+
+	       
        	</div>
     );
   }

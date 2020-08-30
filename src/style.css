@@ -111,25 +111,25 @@ body{
 	padding: 0 0 0 0;
 	position: relative;
 	margin-top: 0;
-	background-color: ;
+	
 }
 
 #t1Index h1{
 	font-family: 'Work Sans', sans-serif;
-    text-align: left;
     padding: 0 5% 0 5%;
     font-weight: 500;
     font-size: 25px;
     text-align: center;
     color: #B96900;
+    background-color: ;
 }
 
 #t1Index h2{
 	font-family: 'Work Sans', sans-serif;
     text-align: left;
-    padding: 0 5% 2% 5%;
     font-weight: 500;
     font-size: 15px;
+    padding: 0 5% 5% 5%;
     text-align: center;
     color: #B96900;
 }
@@ -212,4 +212,13 @@ body{
 	background-color: white;
 	position: relative;
 	height: auto;
+}
+.coments{
+	width: 100%;
+	height: auto;
+	background-color: red;
+	float: left;
+	text-align: center;
+	padding: 20px 0 20px 0 ;
+
 }
