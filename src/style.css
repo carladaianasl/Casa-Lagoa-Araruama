@@ -251,12 +251,35 @@ body{
 .footer{
 	float: left;
 	width: 100%;
-	background-color: ;
 	height: 300px;
 	position: relative;
 	overflow: hidden;
 }
 
+.footerContent{
+	position: absolute;
+	right: 5%;
+	text-align: right;
+	z-index: 999999;
+	bottom: 1%;
+}
+
+.footerContent h1{
+	font-family: 'Work Sans', sans-serif;
+	color: white;
+	font-size: 12px;
+	font-weight: 500;
+}
+
+.footerContent a{
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+
+.footerContent span{
+	padding: 5px;
+}
 .ocean { 
   height: 5%;
   width:100%;
