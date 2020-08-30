@@ -39,10 +39,10 @@ body{
 }
 
 
-#menu{
+.menu{
 	background-color:white;
 }
-#menu ul {
+.menu ul {
     padding:0px;
     margin:0px;
     font-family: 'Work Sans', sans-serif;
@@ -55,11 +55,11 @@ body{
 
 }
 
-#menu ul li { 
+.menu ul li { 
 	display: inline;
 }
 
-#menu ul li a {
+.menu ul li a {
     padding: 8px 20px;
     display: inline-block;
     background-color:white;
@@ -70,12 +70,12 @@ body{
 
 }
 
-#menu ul li a:hover {
+.menu ul li a:hover {
     color: #6D6D6D;
     border-bottom:2px solid #989898;
 }
 
-#menu .selected{
+.menu .selected{
 	 color: #6D6D6D;
     border-bottom:2px solid #989898;
 }
