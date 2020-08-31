@@ -219,22 +219,6 @@ body{
 	position: relative;
 	height: auto;
 }
-.coments{
-	width: 100%;
-	height: 300px;
-	background-color: #fff5da;
-	float: left;
-	text-align: center;
-	margin-top: 2%;
-	padding: 20px 0 20px 0 ;
-	font-family: 'Work Sans', sans-serif;
-}
-
-.coments span{
-	font-family: 'Kaushan Script', cursive;
-	font-size: 26px;	
-	color: #ce7b00;
-}
 
 
 .news{
@@ -321,4 +305,156 @@ body{
   50% {
     transform: translate3d(0,5px,0);
   }
+}
+
+.coments{
+	width: 100%;
+	height: 260px;
+	background-color: #F7E1BA;
+	float: left;
+	text-align: center;
+	margin-top: 2%;
+	padding: 20px 0 20px 0 ;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.coments span{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 28px;	
+	color: #ce7b00;
+}
+
+.carousel-container{
+	height:280px;
+	background-color: ;
+	position: relative;
+}
+
+.carousel {
+	text-align: center;
+	color: gray;
+	position: absolute;
+	background-color: ;
+	height: 230px;
+	transform: translateY(-40%);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	margin-left: 0.2%;
+}
+
+.aspasLeft{
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	z-index: 9999;
+}
+
+.aspasRight{
+	position: absolute;
+	right: 12px;
+	bottom: 10px;
+	z-index: 9999;
+}
+
+.chat{
+	position: absolute;
+	background-color: white;
+	padding: 25px 45px 25px 45px;
+	border-radius: 15px;
+	text-transform: none;
+	font-size: 100%;
+}
+.chatIcon{
+	position: absolute;
+	bottom: -40px;
+	left: 25px;
+}
+
+.chatName{
+	position: absolute;
+	bottom: -25px;
+	margin-left: 40px;
+	color: #ce7b00;
+	font-weight: 500;
+}
+
+.news{
+	height: auto;
+	width: 90%;
+	margin-left: 10%;
+}
+
+.news .photoMain{
+	float: left;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	background-image: url('img/img1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.news .newsTopic{
+	float: left;
+	width: 40%;
+	padding-left: 3%;
+	text-align: left;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+.news .newsText{
+	float: left;
+	width: 40%;
+	padding-left: 3%;
+	text-align: left;
+	text-align: justify;
+}
+
+
+.news2{
+	height: auto;
+	width: 75%;
+	margin-right: 15%;
+	margin-top: 5%;
+	float: right;
+}
+
+.news2 .photoMain{
+	float: right;
+	width: 260px;
+	height: 260px;
+	border-radius: 50%;
+	background-image: url('img/img1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.news2 .newsTopic{
+	float: right;
+	width: 50%;
+	padding-right: 5%;
+	text-align: right;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 26px;
+	font-weight: 600;
+	padding-bottom: 10px;
+	padding-top: 5px;
+}
+
+.news2 .newsText{
+	float: right;
+	width: 50%;
+	padding-right: 5%;
+	text-align: right;
+	text-align: justify;
+	font-family: 'Work Sans', sans-serif;
 }

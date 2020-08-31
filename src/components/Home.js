@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Radium, {StyleRoot} from 'radium';
 import { fadeInDown, fadeIn } from 'react-animations';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const styles = {
 	fadeInDown: {
@@ -13,6 +15,27 @@ const styles = {
 		animationName: Radium.keyframes(fadeIn, 'fadeIn')
 	}
 }
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 4
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 2
+  }
+};
+
 
 class Home extends Component {
   render() {
@@ -70,11 +93,129 @@ class Home extends Component {
 
             <div className="coments">
 	            <span> Veja os comentários de nossos hóspedes!</span>
+		            <Carousel
+					  swipeable={false}
+					  draggable={false}
+					  showDots={false}
+					  responsive={responsive}
+					  ssr={true} // means to render carousel on server-side.
+					  infinite={true}
+					  autoPlay={this.props.deviceType !== "mobile" ? true : false}
+					  autoPlaySpeed={5000}
+					  keyBoardControl={true}
+					  customTransition="all .5"
+					  transitionDuration={500}
+					  containerClass="carousel-container"
+					  removeArrowOnDeviceType={["tablet", "mobile"]}
+					  deviceType={this.props.deviceType}
+					  customTransition="transform 300ms ease-in-out"
+					  dotListClass="custom-dot-list-style"
+					  itemClass="carousel">  
+					 	<div>
+					 		
+					 		
+					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Carla Carvalho | DEZ 2019</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					  	<div>
+					 		
+					 		
+					 		<div className="chat">Muito aconchegante, anfitrião solícito e com excelente recepção.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Marcos | MAIO 2020</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					  	<div>
+					 		
+					 		
+					 		<div className="chat">Melhor casa de temporada que eu e minha família ficamos! Melhor recepção, fomos bem direcionados para todos os lugares, rimos bastante juntos! 
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">André | JUN 2019</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					  	<div>
+					 		
+					 		
+					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Carla Carvalho | DEZ 2020</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					  	<div>
+					 		
+					 		<div className="chat">Muito aconchegante, anfitrião solícito e com excelente recepção.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Marcos | MAIO 2020</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					 	<div>
+					 		
+					 		
+					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Carla Carvalho | DEZ 2020</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					  	<div>
+					 		
+					 		
+					 		<div className="chat">Muito aconchegante, anfitrião solícito e com excelente recepção.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Marcos | MAIO 2020</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					  	<div>
+					 		
+					 		
+					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
+					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
+					 			<div className="chatName">Carla Carvalho | DEZ 2020</div>
+					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
+					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
+					 		</div>
+					 		
+					 	</div>
+					</Carousel>
 	       	</div>
 
 	       	<div className="news">
-	            <span> A região dos lagos</span>
+	       		<div className="photoMain"></div>
+	            <span className="newsTopic">A Região dos Lagos</span>
+	            <span className="newsText"> 
+	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 	            </span>
 	       	</div>
+
+
+	       	<div className="news2">
+	       		<div className="photoMain"></div>
+	            <span className="newsTopic">A Região dos Lagos</span>
+	            <span className="newsText"> 
+	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 	            </span>
+	       	</div>
+
 
 	       
        	</div>
