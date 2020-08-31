@@ -203,7 +203,7 @@ class Home extends Component {
 
 	       	<div className="news">
 	       		<div className="photoMain"></div>
-	            <span className="newsTopic">A Região dos Lagos</span>
+	            <span className="newsTopic">As belezas da Região</span>
 	            <span className="newsText"> 
 	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 	            </span>
 	       	</div>
@@ -211,7 +211,7 @@ class Home extends Component {
 
 	       	<div className="news2">
 	       		<div className="photoMain"></div>
-	            <span className="newsTopic">A Região dos Lagos</span>
+	            <span className="newsTopic">Casa em frente a Lagoa</span>
 	            <span className="newsText"> 
 	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 	            </span>
 	       	</div>
