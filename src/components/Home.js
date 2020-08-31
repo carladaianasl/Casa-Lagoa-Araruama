@@ -97,6 +97,7 @@ class Home extends Component {
 					  swipeable={false}
 					  draggable={false}
 					  showDots={false}
+					  arrows={false}
 					  responsive={responsive}
 					  ssr={true} // means to render carousel on server-side.
 					  infinite={true}
@@ -106,7 +107,7 @@ class Home extends Component {
 					  customTransition="all .5"
 					  transitionDuration={500}
 					  containerClass="carousel-container"
-					  removeArrowOnDeviceType={["tablet", "mobile"]}
+					  removeArrowOnDeviceType={["tablet", "mobile", "destop", "superLargeDesktop"]}
 					  deviceType={this.props.deviceType}
 					  customTransition="transform 300ms ease-in-out"
 					  dotListClass="custom-dot-list-style"
