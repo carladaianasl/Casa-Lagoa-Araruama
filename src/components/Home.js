@@ -3,6 +3,7 @@ import Radium, {StyleRoot} from 'radium';
 import { fadeInDown, fadeIn } from 'react-animations';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import BoxHome from './boxHome';
 
 const styles = {
 	fadeInDown: {
@@ -58,38 +59,36 @@ class Home extends Component {
 	        </div>
 
 	        <div className="allBoxes">
-		        <div className="boxes">
-	                <img src="img/dog.gif" width="100"/>
-	                <h4 className="boxesTitulo">SOMOS PET FRIENDLY</h4>
-	                <h5 className="boxesTexto">Seus animais são muito bem vindos em sua estadia. Sabemos o quanto é difícil ficar sem a companhia deles, pois eles são parte da família e merecem total carinho e atenção.
-	                <p><span>- NÃO COBRAMOS TAXA PET</span></p></h5>
-	            </div>
-	                
-	                <div className="line"></div>
 
+		        <BoxHome 
+		        	img = "img/dog.gif"
+		        	title = "SOMOS PET FRIENDLY"
+		        	content = "Seus animais são muito bem vindos em sua estadia. Sabemos o quanto é difícil ficar sem a companhia deles, pois eles são parte da família e merecem total carinho e atenção."
+		        	subContent = "NÃO COBRAMOS TAXA PET" 
+		        /> <div className="line"></div>
 
-	            <div className="boxes">
-	                <img src="img/gps.gif" width="100px"/>
-	                <h4 className="boxesTitulo">LOCALIZAÇÃO</h4>
-	                <h5 className="boxesTexto">Casa em ótima localização - em condomínio fechado - a 5 minutos do centro da cidade de carro. Bairro tranquilo com ruas asfaltadas. Além disso, é excelente para a prática de esportes ao ar livre.</h5>
-	            </div>
+	            <BoxHome 
+		        	img = "img/gps.gif"
+		        	title = "LOCALIZAÇÃO"
+		        	content = "Casa em ótima localização - em condomínio fechado - a 5 minutos do centro da cidade de carro. Bairro tranquilo com ruas asfaltadas. Além disso, é excelente para a prática de esportes ao ar livre."
+		        	subContent = "" 
+		        /> <div className="line"></div>
 
-	                <div className="line"></div>
-	            
-	            <div className="boxes">
-	                <img src="img/pool.gif" width="100px"/>
-	                <h4 className="boxesTitulo">PISCINA E CHURRASCO</h4>
-	                <h5 className="boxesTexto">A piscina e a churrasqueira são para uso exclusivo de nossos hóspedes. Mantemos a piscina limpa com a colocação periódica de produtos. Ainda curtindo com a família e amigos um lindo pôr do sol.</h5>
-	            </div>
+		        <BoxHome 
+		        	img = "img/pool.gif"
+		        	title = "PISCINA E CHURRASCO"
+		        	content = "A piscina e a churrasqueira são para uso exclusivo de nossos hóspedes. Mantemos a piscina limpa com a colocação periódica de produtos. Ainda curtindo com a família e amigos um lindo pôr do sol."
+		        	subContent = "" 
+		        /> <div className="line"></div>
 
-	                <div className="line"></div>
-	            
-	            <div className="boxes">
-	                <img src="img/kitchen.gif" width="100px"/>
-	                <h4 className="boxesTitulo">CASA COMPLETA</h4>
-	                <h5 className="boxesTexto">Casa mobiliada entregue com limpeza e higienização em todos os ambientes. Disponibilizamos roupas de cama e banho para os hóspedes. Cozinha ja equipada com utensílios e eletrodomésticos.</h5>
-	            </div>
-	        </div>   
+		        <BoxHome 
+		        	img = "img/kitchen.gif"
+		        	title = "CASA COMPLETA"
+		        	content = "Casa mobiliada entregue com limpeza e higienização em todos os ambientes. Disponibilizamos roupas de cama e banho para os hóspedes. Cozinha ja equipada com utensílios e eletrodomésticos."
+		        	subContent = "" 
+		        /> 
+
+		    </div>
 
             <div className="coments">
 	            <span> Veja os comentários de nossos hóspedes!</span>
