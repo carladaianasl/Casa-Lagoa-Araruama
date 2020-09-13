@@ -7,7 +7,7 @@ body{
 
 .curved{
 	width: 100%;
-	height: 70%;
+	height: 500px;
 	text-align: center;
 	position: relative;
 	z-index: 1;
@@ -22,7 +22,9 @@ body{
 .curved svg{
 	display: block;
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 .curved svg[name="first"]{
@@ -30,7 +32,8 @@ body{
 }
 
 .curved svg[name="second"]{
-	bottom: -4px;
+	bottom: 0%;
+	width: 95%;
 }
 
 .photos{
@@ -47,6 +50,7 @@ body{
 .menu{
 	background-color: white;
 	z-index: 999;
+	height: 40px;
 }
 .menu ul {
     padding:0px;
@@ -105,25 +109,39 @@ body{
 }
 
 #t1Index{
-	float: left;
 	left: 0px;
 	width: 100%;
-	height: auto;
+	height: 300px;
 	z-index: 222;
 	padding: 0 0 0 0;
 	position: relative;
-	margin-top: 0;
+	margin-top: -14%;
+	background-color: blue;
+
 	
 }
 
 #t1Index h1{
     font-weight: 400;
-    font-size: 34px;
-    margin-top: 1%;
+    font-size: 44px;
     text-align: center;
     color: #B96900;
-    background-color: ;
+    background-color: green;
+    float: left;
+  	top: 50%;
+  	transform: translateY(-50%);
+  	position: absolute;
+    width: 50%;
+    left: 5%;
     font-family: 'Kaushan Script', cursive;
+}
+
+.formIndex {
+	float: right;
+	width: 40%;
+	right: 0px;
+	height: 200px;
+	background-color: red;
 }
 
 
@@ -216,16 +234,7 @@ body{
 
 
 
-.news{
-	width: 100%;
-	height: 200px;
-	background-color: white;
-	float: left;
-	text-align: center;
-	margin-top: 2%;
-	padding: 20px 0 20px 0 ;
-	font-family: 'Work Sans', sans-serif;
-}
+
 
 .footer{
 	float: left;
@@ -304,12 +313,12 @@ body{
 
 .coments{
 	width: 100%;
-	height: 260px;
-	background-color: #F7E1BA;
+	height: 320px;
+	background-color: aliceblue;
 	float: left;
 	text-align: center;
-	margin-top: 2%;
-	padding: 20px 0 20px 0 ;
+	margin-top: 5%;
+	padding: 30px 0 20px 0 ;
 	font-family: 'Work Sans', sans-serif;
 }
 
@@ -374,85 +383,137 @@ body{
 	font-weight: 500;
 }
 
+.boxNews{
+	top: 40px;
+	position: relative;
+}
+
 .news{
-	height: auto;
-	width: 90%;
-	margin-left: 10%;
-}
-
-.news .photoMain{
+	width: 100%;
+	background-color: black;
 	float: left;
-	width: 260px;
-	height: 260px;
-	border-radius: 50%;
-	background-image: url('https://www.temporadadeferias.com.br/Recursos/Imagens/media/p1a5hvspjn116k664o631r4p1o693.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+	text-align: center;
+	padding: 0px 0 0px 0 ;
+	font-family: 'Work Sans', sans-serif;
+	height: auto;
+	width: 100%;
+	margin-left: 0px;
 }
 
+.news img{
+	float: left;
+	width: 50%;
+	max-height: 250px;
+	min-height: 250px;
+	object-fit: cover;
+}
+
+.news a{
+	cursor: pointer;
+	opacity: 0.3;
+	-webkit-transition: opacity 1s ease-in-out;
+ 	-moz-transition: opacity 1s ease-in-out;
+  	-ms-transition: opacity 1s ease-in-out;
+  	-o-transition: opacity 1s ease-in-out;
+  	transition: opacity 1s ease-in-out;
+}
+
+.news a:hover{
+	opacity: 1;
+}
+
+
+
+
+.content{
+	width: 50%;
+	height: auto;
+	min-height: 250px;
+	background-color: white;
+	float: left;
+	position: relative;
+}
 
 .news .newsTopic{
-	float: left;
-	width: 40%;
-	padding-left: 3%;
-	text-align: left;
+	width: 90%;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 26px;
 	font-weight: 600;
-	padding-bottom: 10px;
-	padding-top: 5px;
+	top: 15%;
+	left: 5%;
+	position: absolute;
+	background-color: ;
+	text-align: left;
 }
 
 .news .newsText{
 	float: left;
-	width: 40%;
-	padding-left: 3%;
+	width: 90%;
 	text-align: left;
 	text-align: justify;
+	top: 30%;
+	left: 5%;
+	position: absolute;
+	
+
 }
 
 
 .news2{
 	height: auto;
-	width: 75%;
-	margin-right: 15%;
-	margin-top: 5%;
+	width: 100%;
+	margin-right: 0px;
 	float: right;
+	padding: 0px 0 0px 0 ;
+	background-color: black;
+
+
 }
 
-.news2 .photoMain{
-	float: right;
-	width: 260px;
-	height: 260px;
-	border-radius: 50%;
-	background-image: url('img/img1.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
-
-
-.news2 .newsTopic{
+.news2 img{
 	float: right;
 	width: 50%;
-	padding-right: 5%;
+	height: 250px;
+	object-fit: cover;
+}
+
+.news2 a{
+	cursor: pointer;
+	opacity: 0.3;
+	-webkit-transition: opacity 1s ease-in-out;
+ 	-moz-transition: opacity 1s ease-in-out;
+  	-ms-transition: opacity 1s ease-in-out;
+  	-o-transition: opacity 1s ease-in-out;
+  	transition: opacity 1s ease-in-out;
+}
+
+.news2 a:hover{
+	opacity: 1;
+}
+
+.news2 .newsTopic{
+	width: 90%;
 	text-align: right;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 26px;
 	font-weight: 600;
-	padding-bottom: 10px;
-	padding-top: 5px;
+	top: 15%;
+	right: 5%;
+	position: absolute;
+	background-color: ;
+	text-align: right;
 }
 
 
 .news2 .newsText{
-	float: right;
-	width: 50%;
-	padding-right: 5%;
+	width: 90%;
 	text-align: right;
 	text-align: justify;
 	font-family: 'Work Sans', sans-serif;
+	position: absolute;
+	right: 5%;
+	top: 30%;
+	height: auto;
 }
 
 .sorry{
@@ -575,4 +636,14 @@ body{
 .curvaContact svg{
 	z-index: 1;
 	height: 350px;
+}
+
+.division {
+	position: absolute;
+	color: aliceblue;
+	width: 90%;
+	background-color: orange;
+	height: 1px;
+	left: 5%;
+	right: 5%;
 }

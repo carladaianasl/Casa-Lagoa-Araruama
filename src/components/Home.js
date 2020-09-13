@@ -4,6 +4,7 @@ import { fadeInDown, fadeIn } from 'react-animations';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import BoxHome from './boxHome';
+import BoxNews from './boxNews';
 
 const styles = {
 	fadeInDown: {
@@ -42,21 +43,35 @@ class Home extends Component {
   render() {
     return (
         <div className="main">
+
+
         	<StyleRoot style={styles.fadeIn}>
-	    		<div id="logo"><img src="img/logo.png"/></div>
+	    			<div id="logo"><img src="img/logo.png"/></div>
+
 	    			<div className="curved">
-						<svg name="first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f7ca63" fillOpacity="1" d="M0,256L80,266.7C160,277,320,299,480,282.7C640,267,800,213,960,197.3C1120,181,1280,203,1360,213.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+	    			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fill-opacity="1" d="M0,96L80,122.7C160,149,320,203,480,192C640,181,800,107,960,74.7C1120,43,1280,53,1360,58.7L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
 						<div className="photos"></div>
-						<svg name="second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="white" fillOpacity="1" d="M0,256L80,266.7C160,277,320,299,480,282.7C640,267,800,213,960,197.3C1120,181,1280,203,1360,213.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+
     				</div>
     		</StyleRoot>
 
     		<div id="t1Index">
+
 	    		<StyleRoot style={styles.fadeInDown}>
 	            <h1> Venha curtir momentos únicos e inesquecíveis com sua família e amigos!</h1>
-	            <span><button className="buttonMain">SAIBA MAIS</button></span>
+	            <div className="formIndex">
+
+	            	<h3>Faça sua reserva!</h3>
+
+	            </div>
 	            </StyleRoot>
+
 	        </div>
+
+
+
+
 
 	        <div className="allBoxes">
 
@@ -92,129 +107,34 @@ class Home extends Component {
 
             <div className="coments">
 	            <span> Veja os comentários de nossos hóspedes!</span>
-		            <Carousel
-					  swipeable={false}
-					  draggable={false}
-					  showDots={false}
-					  arrows={false}
-					  responsive={responsive}
-					  ssr={true} // means to render carousel on server-side.
-					  infinite={true}
-					  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-					  autoPlaySpeed={5000}
-					  keyBoardControl={true}
-					  customTransition="all .5"
-					  transitionDuration={500}
-					  containerClass="carousel-container"
-					  removeArrowOnDeviceType={["tablet", "mobile", "destop", "superLargeDesktop"]}
-					  deviceType={this.props.deviceType}
-					  customTransition="transform 300ms ease-in-out"
-					  dotListClass="custom-dot-list-style"
-					  itemClass="carousel">  
-					 	<div>
-					 		
-					 		
-					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Carla Carvalho | DEZ 2019</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					  	<div>
-					 		
-					 		
-					 		<div className="chat">Muito aconchegante, anfitrião solícito e com excelente recepção.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Marcos | MAIO 2020</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					  	<div>
-					 		
-					 		
-					 		<div className="chat">Melhor casa de temporada que eu e minha família ficamos! Melhor recepção, fomos bem direcionados para todos os lugares, rimos bastante juntos! 
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">André | JUN 2019</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					  	<div>
-					 		
-					 		
-					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Carla Carvalho | DEZ 2020</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					  	<div>
-					 		
-					 		<div className="chat">Muito aconchegante, anfitrião solícito e com excelente recepção.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Marcos | MAIO 2020</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					 	<div>
-					 		
-					 		
-					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Carla Carvalho | DEZ 2020</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					  	<div>
-					 		
-					 		
-					 		<div className="chat">Muito aconchegante, anfitrião solícito e com excelente recepção.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Marcos | MAIO 2020</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					  	<div>
-					 		
-					 		
-					 		<div className="chat">Foram 5 dias maravilhosos.eu e minha família adoramos e pretendemos voltar outras vezes. Vc e o seu esposo com uma recepção incrível.
-					 			<div className="chatIcon"><img src="img/chat.svg" width="40"/></div>
-					 			<div className="chatName">Carla Carvalho | DEZ 2020</div>
-					 			<div className="aspasLeft"><img src="img/markLeft.svg" width="25"/></div>
-					 			<div className="aspasRight"><img src="img/markRight.svg" width="25"/></div>
-					 		</div>
-					 		
-					 	</div>
-					</Carousel>
+		            
 	       	</div>
 
-	       	<div className="news">
-	       		<div className="photoMain"></div>
-	            <span className="newsTopic">As belezas da Região</span>
-	            <span className="newsText"> 
-	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 	            </span>
+	       	<div className="boxNews">
+	       		
+	       		<BoxNews
+	       			img= "../img/img1.jpg"
+	       			title= "Fique por dentro!"
+	       			content= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+	       			position = "left"
+	       		/> 	
+
+
+	       		<BoxNews
+	       			img= "../img/img1.jpg"
+	       			title= "Aberta pré-reserva para Ano novo!"
+	       			content= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took."
+	       			position = "right"
+	       		/> 		
+
+
+
 	       	</div>
 
 
-	       	<div className="news2">
-	       		<div className="photoMain"></div>
-	            <span className="newsTopic">Casa em frente a Lagoa</span>
-	            <span className="newsText"> 
-	            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 	            </span>
-	       	</div>
+
+
+	    
 
 
 	       
