@@ -6,7 +6,7 @@ const BoxHome = (props) =>{
 	        <img src={props.img} width="100"/>
 	        <h4 className="boxesTitulo">{props.title}</h4>
 	        <h5 className="boxesTexto">{props.content}
-	        <span><p>{props.subContent}</p></span></h5>
+	        <span><br/><br/>{props.subContent}</span></h5>
 	    </div>
 	);
 };

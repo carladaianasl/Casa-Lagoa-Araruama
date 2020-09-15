@@ -58,14 +58,70 @@ class Home extends Component {
 
     		<div id="t1Index">
 
-	    		<StyleRoot style={styles.fadeInDown}>
-	            <h1> Venha curtir momentos únicos e inesquecíveis com sua família e amigos!</h1>
+	    		
+	            <h1> Venha curtir momentos inesquecíveis com sua família e amigos!</h1>
+	           
+
+	            <div className="buttonMain">  
+	            	<button className="ui basic button">
+					  <i className="icon plus"></i>
+					  Saiba mais
+					</button>
+				</div>
+
+			
+
 	            <div className="formIndex">
 
-	            	<h3>Faça sua reserva!</h3>
+	            	<div className="formContent">
+
+	            		<div className="titleForm">
+	            			<h3>Verifique a disponibilidade e venha aproveitar! <hr /></h3>
+
+	            		</div>
+
+	            		<div className="ui form">
+
+						  	<div className="two fields">
+							    <div className="field">
+							      <label>Check-in</label>
+							      <input type="date" placeholder="First Name"/>
+							    </div>
+							    <div class="field">
+							      <label>Check-out</label>
+							      <input type="date" placeholder="Middle Name"/>
+							    </div>
+							</div>
+
+							<div className="three fields">
+							    <div className="field">
+							      <label>Hóspedes</label>
+								      	<select>
+									      <option value="">-</option>
+									      <option value="1">1</option>
+									      <option value="0">2</option>
+									      <option value="0">3</option>
+									      <option value="0">4</option>
+									      <option value="0">5</option>
+									      <option value="0">6</option>
+									      <option value="0">7</option>
+									      <option value="0">8</option>
+									    </select>
+							    </div>
+							</div>
+							
+							<div className="buttonForm"> 
+								<button class="positive ui button">Reserve agora</button>
+							</div>
+
+				 </div>
+						  
+
+	            	</div>
+
 
 	            </div>
-	            </StyleRoot>
+	            
 
 	        </div>
 
@@ -79,7 +135,7 @@ class Home extends Component {
 		        	img = "img/dog.gif"
 		        	title = "SOMOS PET FRIENDLY"
 		        	content = "Seus animais são muito bem vindos em sua estadia. Sabemos o quanto é difícil ficar sem a companhia deles, pois eles são parte da família e merecem total carinho e atenção."
-		        	subContent = "NÃO COBRAMOS TAXA PET" 
+		        	subContent = "NÃO COBRAMOS TAXA PET " 
 		        /> <div className="line"></div>
 
 	            <BoxHome 
@@ -106,14 +162,14 @@ class Home extends Component {
 		    </div>
 
             <div className="coments">
-	            <span> Veja os comentários de nossos hóspedes!</span>
+	            <span> Depoimentos de nossos hóspedes!</span>
 		            
 	       	</div>
 
 	       	<div className="boxNews">
 	       		
 	       		<BoxNews
-	       			img= "../img/img1.jpg"
+	       			img= "https://s2.glbimg.com/wReymxMIoyKeFK5FQAvSECiU7rQ=/0x0:1280x853/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/L/1/W5AXgaRIArEm9YCG7aQQ/whatsapp-image-2020-08-12-at-13.07.00-2-.jpeg"
 	       			title= "Fique por dentro!"
 	       			content= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
 	       			position = "left"
@@ -127,8 +183,44 @@ class Home extends Component {
 	       			position = "right"
 	       		/> 		
 
+	       		<BoxNews
+	       			img= "https://s2.glbimg.com/wReymxMIoyKeFK5FQAvSECiU7rQ=/0x0:1280x853/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/L/1/W5AXgaRIArEm9YCG7aQQ/whatsapp-image-2020-08-12-at-13.07.00-2-.jpeg"
+	       			title= "Fique por dentro!"
+	       			content= "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+	       			position = "left"
+	       		/> 	
+
+	       	</div>
 
 
+	       	<div className="newsletter">
+
+	       		<h3>Quer ficar por dentro das promoções e novidades? Cadastre-se gratuitamente!
+	       		<hr />
+	       		</h3>
+
+	       		<div class="ui form">
+				  <div class="three fields">
+				    <div class="field">
+				      <label>Nome</label>
+				      <input type="text" placeholder="Nome" />
+				    </div>
+				    <div class="field">
+				      <label>E-mail</label>
+				      <input type="text" placeholder="E-mail" />
+				    </div>
+				    <div class="field">
+				      <label>WhatsApp</label>
+				      <input type="text" placeholder="Receber ofertas por WhatsApp" />
+				    </div>
+				</div>
+
+				<button class="ui right floated button">
+					  Cadastrar
+				</button>
+
+
+				</div>
 	       	</div>
 
 
