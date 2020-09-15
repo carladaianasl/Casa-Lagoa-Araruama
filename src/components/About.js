@@ -6,12 +6,14 @@ class About extends Component {
         <div className="main">
         	<div className="BackgroundMain">
 
-        		<h1> Conheça a Casa Lagoa Araruama </h1>
+        		<div className="logoMenor"><img src={require('../img/logo.png')} /></div>
+
+        		<h1>Olá, sejam bem vindos! </h1>
 
         		<div className="textAbout">
         		
         		<h3><p>
-        		Sejam bem vindos! 
+        		A Casa Lagoa Araruama fica em frente a lagoa de Araruama, maior lagoa salgada da América Latina, a 3Km do centro da cidade. Lugar perfeito para curtir ótimos momentos em família e amigos. Você vai amar apreciar o pôr do sol e conectar-se com a natureza.
         		</p></h3>
 
         		<h3><p>
@@ -25,6 +27,24 @@ class About extends Component {
         		<h3><p>
         		Saiba sobre as <a href="#">regras da casa</a>.
         		</p></h3>
+
+        			<div className="circle">
+        				
+        				<span><a href="#"> <img src="img/img1.jpg" /> </a></span>
+        				<h2>Área Externa</h2>
+        			</div>
+
+        			<div className="circle">
+        				
+        				<span><a href="#"> <img src="img/img1.jpg" /> </a></span>
+        				<h2>Área Interna</h2>
+        			</div>
+
+        			<div className="circle">
+        				
+        				<span><a href="#"> <img src="img/img1.jpg" /> </a></span>
+        				<h2>Quartos</h2>
+        			</div>
 
         		</div>
 
@@ -46,11 +66,14 @@ class About extends Component {
         		</div>
 
         		<div className="GalleryVideos">
-
-        			<h2> Vídeos </h2>
+        			<hr />
+        			<h2> Tour Virtual </h2>
+        			<span><iframe width="560" height="315" src="https://www.youtube.com/embed/94YA4eNpw2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
 
 
         		</div>
+
+        		
 
         	</div>
         </div>

@@ -6,12 +6,12 @@ class Contact extends Component {
     return (
         <div className="main form">
 
-        	<div className="logoMenor"><img src={require('../img/logo-menor.png')} /></div>
+        	<div className="logoMenor"><img src={require('../img/logo.png')} /></div>
 
-        	<div className="curvaContact">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFFFCC" fill-opacity="1" d="M0,288L80,293.3C160,299,320,309,480,293.3C640,277,800,235,960,218.7C1120,203,1280,213,1360,218.7L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>        	
-				<div className="imgContact"></div>
-        	</div>
+				<div className="imgContact">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.7751237135894!2d-42.37324068556093!3d-22.884764042837745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9768f5bd309cad%3A0xb76595f92f9f56a2!2sR.%20Pref.%20Antonio%20Raposo%2C%202761%20-%20Pte.%20dos%20Leites%2C%20Araruama%20-%20RJ%2C%2028970-000!5e0!3m2!1sen!2sbr!4v1600192471266!5m2!1sen!2sbr"  frameborder="0" style={{ border:"0" }} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+				</div>
+        	
         		
 	        <div className="mainForm">
 	        	<form className="ui form">

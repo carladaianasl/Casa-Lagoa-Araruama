@@ -558,6 +558,8 @@ body{
     
 }
 
+
+
 .mainForm{
 	width: 50%;
 	left: 50%;
@@ -565,6 +567,7 @@ body{
 	background-color:;
 	position: relative;
 	padding: 40px 0 40px 0;
+	float: left;
 }
 
 .main{
@@ -576,15 +579,15 @@ body{
 
 .main.form{
 	
-	background-image: linear-gradient(#FFFFCC, #FFFFCC,white);
+	background-image: linear-gradient(#F3F8FF, white);
 }
 
 .logoMenor{
 	background-color: ;
 	position: absolute;
-	width: 280px;
-	left: 6%;
-	top: -38px;
+	width: 260px;
+	left: 12%;
+	top: -25px;
 	height: auto; 
 }
 
@@ -593,20 +596,12 @@ body{
 	height: auto;
 }
 
-.imgContact{
-	background-image: url('img/bg1.jpeg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+.imgContact iframe{
 	width: 100%;
-	height: 350px;
-	margin-top: -354px;
+	height: 250px;
+	margin-top: 0px;
 }
 
-.curvaContact svg{
-	z-index: 1;
-	height: 350px;
-}
 
 .division {
 	position: absolute;
@@ -652,20 +647,27 @@ body{
 	left: 10%;
 	float: left;
 	width: 80%;
-	padding: 2% 2% 2% 2%;
-	height: 200px;
-	background-color: red;
+	height: auto;
+	background-color: ;
 	position: relative;
 }
 
 .GalleryVideos h2{
 	font-family: 'Bitter', serif;
-	font-weight: 700;
+	font-weight: 600;
 	text-align: left;
-	padding-left: 0%;
-	padding-top: 20px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	height: auto;
 	width: 100%;
+	font-size: 20px;
+}
+
+.GalleryVideos iframe{
+	margin-left: 50%;
+	transform: translateX(-50%);
+
 }
 
 .BackgroundMain h1{
@@ -673,7 +675,7 @@ body{
 	font-weight: 700;
 	text-align: left;
 	padding-left: 12%;
-	padding-top: 80px;
+	padding-top: 60px;
 	height: auto;
 	width: 100%;
 }
@@ -687,7 +689,7 @@ body{
 	padding: 30px 60px 0 0 ;
 	margin-left: 12%;
 	background-color: ;
-	height: 400px;
+	height: auto;
 	top: 0px;
 }
 
@@ -737,3 +739,32 @@ body{
 	background-color: ;
 }
 
+
+.circle{
+	width: 200px;
+	height: 280px;
+	margin-left: 5%;
+	margin-top: 30px; 
+	float: left;
+}
+.circle img{
+	width: 190px;
+	height: 190px;
+	object-fit: cover;
+	border-radius: 50%;
+	opacity: 1;
+}
+
+.circle a:hover{
+	opacity: 0.6;
+}
+
+.circle h2{
+ 	text-align: center;
+ 	width: 100%;
+ 	font-family: 'Bitter', serif;
+	font-weight: 600;
+	font-size: 15px;
+	color: darkgreen;
+	margin-top: 5px;
+}
